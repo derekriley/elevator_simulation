@@ -393,3 +393,15 @@
 2025-08-11 11:08:12,950 - root - INFO - Passenger P0011 exited elevator elevator_B
 2025-08-11 11:08:12,951 - root - INFO - Passenger P0012 exited elevator elevator_B
 2025-08-11 11:09:10,227 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 11:38:17,030 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 11:38:17,149 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 11:38:17,150 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 11:38:17,150 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 11:38:17,150 - root - INFO - Building main_building initialized with 2 elevators and 10 floors
+2025-08-11 11:38:17,150 - root - INFO - Simulation logger initialized for session 20250811_113817
+2025-08-11 11:38:17,150 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 11:38:17,150 - root - INFO - Simulation controller initialized
+2025-08-11 11:38:17,150 - root - INFO - Elevator simulator initialized
+2025-08-11 11:38:17,323 - root - INFO - Building and GUI created from configuration
+2025-08-11 11:38:17,323 - root - INFO - Main window initialized
+2025-08-11 11:38:23,357 - root - INFO - Elevator Simulation Tool shutting down
