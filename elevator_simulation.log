@@ -1,0 +1,395 @@
+2025-08-11 10:27:02,204 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:27:02,576 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:27:02,577 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:27:02,578 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:27:02,579 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:27:02,581 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:27:02,590 - root - INFO - Simulation logger initialized for session 20250811_102702
+2025-08-11 10:27:02,592 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:27:02,593 - root - INFO - Simulation controller initialized
+2025-08-11 10:27:02,595 - root - INFO - Elevator simulator initialized
+2025-08-11 10:27:02,951 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:27:02,951 - root - INFO - Main window initialized
+2025-08-11 10:27:55,228 - root - INFO - Passenger generation enabled
+2025-08-11 10:28:06,395 - root - INFO - Simulation started
+2025-08-11 10:28:10,559 - root - INFO - Hall call assigned to elevator elevator_A: floor 7, direction UP
+2025-08-11 10:28:10,571 - root - INFO - Hall button pressed: floor 7, direction up
+2025-08-11 10:28:11,674 - root - INFO - Hall call assigned to elevator elevator_B: floor 7, direction DOWN
+2025-08-11 10:28:11,688 - root - INFO - Hall button pressed: floor 7, direction down
+2025-08-11 10:28:13,219 - root - INFO - Hall call assigned to elevator elevator_C: floor 4, direction UP
+2025-08-11 10:28:13,232 - root - INFO - Hall button pressed: floor 4, direction up
+2025-08-11 10:28:15,239 - root - INFO - Elevator elevator_C button pressed: floor 2
+2025-08-11 10:28:15,762 - root - INFO - Elevator elevator_C button pressed: floor 4
+2025-08-11 10:28:16,627 - root - INFO - Elevator elevator_B button pressed: floor 3
+2025-08-11 10:28:17,883 - root - INFO - Elevator elevator_A button pressed: floor 8
+2025-08-11 10:29:00,556 - root - INFO - Hall call assigned to elevator elevator_A: floor 7, direction UP
+2025-08-11 10:29:00,568 - root - INFO - Hall button pressed: floor 7, direction up
+2025-08-11 10:29:04,620 - root - INFO - Elevator elevator_A button pressed: floor 10
+2025-08-11 10:30:41,020 - root - INFO - Elevator elevator_B button pressed: floor 7
+2025-08-11 10:30:53,355 - root - INFO - Passenger generation disabled
+2025-08-11 10:30:55,331 - root - INFO - Passenger generation enabled
+2025-08-11 10:30:56,427 - root - INFO - Passenger generation disabled
+2025-08-11 10:31:05,274 - root - INFO - Simulation paused
+2025-08-11 10:31:08,550 - root - INFO - Simulation resumed
+2025-08-11 10:31:10,939 - root - WARNING - Simulation already running
+2025-08-11 10:31:14,789 - root - INFO - Simulation stopped
+2025-08-11 10:31:14,830 - root - INFO - Simulation report saved to simulation_output\simulation_report_20250811_102702.json
+2025-08-11 10:31:14,832 - root - INFO - Simulation report generated
+2025-08-11 10:31:32,695 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:34:28,814 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:34:28,998 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:34:28,998 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:34:28,999 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:34:29,000 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:34:29,003 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:34:29,010 - root - INFO - Simulation logger initialized for session 20250811_103429
+2025-08-11 10:34:29,010 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:34:29,011 - root - INFO - Simulation controller initialized
+2025-08-11 10:34:29,011 - root - INFO - Elevator simulator initialized
+2025-08-11 10:34:29,163 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:34:29,164 - root - INFO - Main window initialized
+2025-08-11 10:34:40,319 - root - INFO - Simulation started
+2025-08-11 10:34:42,769 - root - INFO - Passenger generation enabled
+2025-08-11 10:34:50,722 - root - INFO - Application interrupted by user
+2025-08-11 10:34:50,730 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:36:00,339 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:36:00,504 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:36:00,505 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:36:00,506 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:36:00,506 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:36:00,507 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:36:00,510 - root - INFO - Simulation logger initialized for session 20250811_103600
+2025-08-11 10:36:00,510 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:36:00,510 - root - INFO - Simulation controller initialized
+2025-08-11 10:36:00,511 - root - INFO - Elevator simulator initialized
+2025-08-11 10:36:00,662 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:36:00,662 - root - INFO - Main window initialized
+2025-08-11 10:36:06,761 - root - INFO - Passenger generation enabled
+2025-08-11 10:36:11,831 - root - INFO - Simulation started
+2025-08-11 10:36:23,790 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:39:04,877 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:39:05,075 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:39:05,081 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:39:05,086 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:39:05,087 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:39:05,088 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:39:05,093 - root - INFO - Simulation logger initialized for session 20250811_103905
+2025-08-11 10:39:05,094 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:39:05,095 - root - INFO - Simulation controller initialized
+2025-08-11 10:39:05,095 - root - INFO - Elevator simulator initialized
+2025-08-11 10:39:05,263 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:39:05,264 - root - INFO - Main window initialized
+2025-08-11 10:39:08,303 - root - INFO - Simulation started
+2025-08-11 10:40:55,038 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:40:58,676 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:40:58,853 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:40:58,855 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:40:58,856 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:40:58,856 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:40:58,857 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:40:58,862 - root - INFO - Simulation logger initialized for session 20250811_104058
+2025-08-11 10:40:58,863 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:40:58,864 - root - INFO - Simulation controller initialized
+2025-08-11 10:40:58,864 - root - INFO - Elevator simulator initialized
+2025-08-11 10:40:59,076 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:40:59,088 - root - INFO - Main window initialized
+2025-08-11 10:41:02,045 - root - INFO - Simulation started
+2025-08-11 10:41:08,315 - root - INFO - Passenger generation enabled
+2025-08-11 10:42:48,307 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:43:08,074 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:43:08,244 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:43:08,245 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:43:08,248 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:43:08,249 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:43:08,250 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:43:08,256 - root - INFO - Simulation logger initialized for session 20250811_104308
+2025-08-11 10:43:08,256 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:43:08,257 - root - INFO - Simulation controller initialized
+2025-08-11 10:43:08,257 - root - INFO - Elevator simulator initialized
+2025-08-11 10:43:08,428 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:43:08,429 - root - INFO - Main window initialized
+2025-08-11 10:43:11,485 - root - INFO - Simulation started
+2025-08-11 10:43:14,727 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 10:43:14,731 - root - INFO - Added passenger P0001: floor 1 -> 2
+2025-08-11 10:43:27,385 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 10:43:27,401 - root - INFO - Added passenger P0002: floor 1 -> 10
+2025-08-11 10:43:38,830 - root - INFO - Passenger generation enabled
+2025-08-11 10:43:53,581 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 10:43:53,598 - root - INFO - Added passenger P0003: floor 10 -> 1
+2025-08-11 10:44:13,606 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 10:44:13,615 - root - INFO - Added passenger P0004: floor 10 -> 1
+2025-08-11 10:44:25,723 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:51:18,952 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:51:19,146 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:51:19,149 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:51:19,150 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:51:19,151 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:51:19,151 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:51:19,155 - root - INFO - Simulation logger initialized for session 20250811_105119
+2025-08-11 10:51:19,155 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:51:19,156 - root - INFO - Simulation controller initialized
+2025-08-11 10:51:19,157 - root - INFO - Elevator simulator initialized
+2025-08-11 10:51:19,353 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:51:19,353 - root - INFO - Main window initialized
+2025-08-11 10:51:31,264 - root - INFO - Simulation paused
+2025-08-11 10:51:33,496 - root - INFO - Simulation started
+2025-08-11 10:51:39,070 - root - INFO - Passenger generation enabled
+2025-08-11 10:51:41,918 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 10:51:41,939 - root - INFO - Added passenger P0001: floor 1 -> 2
+2025-08-11 10:51:50,928 - root - INFO - Simulation stopped
+2025-08-11 10:51:50,975 - root - INFO - Simulation report saved to simulation_output\simulation_report_20250811_105119.json
+2025-08-11 10:51:50,977 - root - INFO - Simulation report generated
+2025-08-11 10:52:34,693 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:52:41,219 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:52:41,628 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:52:41,629 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:52:41,630 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:52:41,630 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:52:41,631 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:52:41,638 - root - INFO - Simulation logger initialized for session 20250811_105241
+2025-08-11 10:52:41,639 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:52:41,640 - root - INFO - Simulation controller initialized
+2025-08-11 10:52:41,640 - root - INFO - Elevator simulator initialized
+2025-08-11 10:52:42,698 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:52:42,705 - root - INFO - Main window initialized
+2025-08-11 10:53:18,370 - root - INFO - Passenger generation enabled
+2025-08-11 10:53:20,522 - root - INFO - Simulation started
+2025-08-11 10:53:26,637 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 10:53:26,641 - root - INFO - Added passenger P0001: floor 1 -> 2
+2025-08-11 10:53:53,907 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 10:56:56,075 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 10:56:56,237 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 10:56:56,239 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 10:56:56,239 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 10:56:56,240 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 10:56:56,241 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 10:56:56,245 - root - INFO - Simulation logger initialized for session 20250811_105656
+2025-08-11 10:56:56,245 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 10:56:56,246 - root - INFO - Simulation controller initialized
+2025-08-11 10:56:56,247 - root - INFO - Elevator simulator initialized
+2025-08-11 10:56:56,413 - root - INFO - Building and GUI created from configuration
+2025-08-11 10:56:56,414 - root - INFO - Main window initialized
+2025-08-11 10:57:03,876 - root - INFO - Passenger generation enabled
+2025-08-11 10:57:04,710 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 10:57:04,721 - root - INFO - Added passenger P0001: floor 1 -> 10
+2025-08-11 10:57:13,061 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 10:57:13,069 - root - INFO - Added passenger P0002: floor 10 -> 1
+2025-08-11 10:57:14,633 - root - INFO - Simulation started
+2025-08-11 10:57:16,720 - root - INFO - Passenger P0001 boarded elevator elevator_A, destination: floor 10
+2025-08-11 10:57:16,735 - root - INFO - Passenger P0001 boarded elevator elevator_A
+2025-08-11 10:57:29,051 - root - INFO - Passenger P0001 arrived at floor 10
+2025-08-11 10:57:29,088 - root - INFO - Passenger P0001 exited elevator elevator_A
+2025-08-11 10:57:29,089 - root - INFO - Passenger P0002 boarded elevator elevator_A, destination: floor 1
+2025-08-11 10:57:29,090 - root - INFO - Passenger P0002 boarded elevator elevator_A
+2025-08-11 10:57:35,981 - root - INFO - Elevator elevator_A button pressed: floor 9
+2025-08-11 10:57:41,329 - root - INFO - Passenger P0002 arrived at floor 1
+2025-08-11 10:57:41,338 - root - INFO - Passenger P0002 exited elevator elevator_A
+2025-08-11 10:58:02,287 - root - INFO - Elevator elevator_A button pressed: floor 7
+2025-08-11 10:58:38,559 - root - INFO - Passenger generation disabled
+2025-08-11 10:58:39,646 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 10:58:39,651 - root - INFO - Added passenger P0003: floor 10 -> 1
+2025-08-11 10:58:43,353 - root - INFO - Passenger P0003 boarded elevator elevator_A, destination: floor 1
+2025-08-11 10:58:43,368 - root - INFO - Passenger P0003 boarded elevator elevator_A
+2025-08-11 10:58:55,650 - root - INFO - Passenger P0003 arrived at floor 1
+2025-08-11 10:58:55,661 - root - INFO - Passenger P0003 exited elevator elevator_A
+2025-08-11 10:58:57,397 - root - INFO - Hall call assigned to elevator elevator_B: floor 1, direction UP
+2025-08-11 10:58:57,410 - root - INFO - Added passenger P0004: floor 1 -> 10
+2025-08-11 10:58:57,585 - root - INFO - Passenger P0004 boarded elevator elevator_A, destination: floor 10
+2025-08-11 10:58:57,587 - root - INFO - Passenger P0004 boarded elevator elevator_A
+2025-08-11 10:59:01,027 - root - INFO - Hall call assigned to elevator elevator_C: floor 1, direction UP
+2025-08-11 10:59:01,040 - root - INFO - Added passenger P0005: floor 1 -> 10
+2025-08-11 10:59:01,102 - root - INFO - Passenger P0005 boarded elevator elevator_B, destination: floor 10
+2025-08-11 10:59:01,103 - root - INFO - Passenger P0005 boarded elevator elevator_B
+2025-08-11 10:59:02,210 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 10:59:02,221 - root - INFO - Added passenger P0006: floor 1 -> 10
+2025-08-11 10:59:02,325 - root - INFO - Passenger P0006 boarded elevator elevator_B, destination: floor 10
+2025-08-11 10:59:02,327 - root - INFO - Passenger P0006 boarded elevator elevator_B
+2025-08-11 10:59:04,746 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 10:59:04,759 - root - INFO - Added passenger P0007: floor 1 -> 10
+2025-08-11 10:59:04,776 - root - INFO - Passenger P0007 boarded elevator elevator_C, destination: floor 10
+2025-08-11 10:59:04,776 - root - INFO - Passenger P0007 boarded elevator elevator_C
+2025-08-11 10:59:06,819 - root - INFO - Hall call assigned to elevator elevator_B: floor 1, direction UP
+2025-08-11 10:59:06,832 - root - INFO - Added passenger P0008: floor 1 -> 10
+2025-08-11 10:59:07,795 - root - INFO - Passenger P0004 arrived at floor 10
+2025-08-11 10:59:07,810 - root - INFO - Passenger P0004 exited elevator elevator_A
+2025-08-11 10:59:07,901 - root - INFO - Hall call assigned to elevator elevator_B: floor 1, direction UP
+2025-08-11 10:59:07,903 - root - INFO - Added passenger P0009: floor 1 -> 10
+2025-08-11 10:59:08,551 - root - INFO - Hall call assigned to elevator elevator_C: floor 1, direction UP
+2025-08-11 10:59:08,557 - root - INFO - Added passenger P0010: floor 1 -> 10
+2025-08-11 10:59:10,681 - root - INFO - Passenger P0010 boarded elevator elevator_C, destination: floor 10
+2025-08-11 10:59:10,693 - root - INFO - Passenger P0010 boarded elevator elevator_C
+2025-08-11 10:59:10,695 - root - INFO - Passenger P0009 boarded elevator elevator_C, destination: floor 10
+2025-08-11 10:59:10,695 - root - INFO - Passenger P0009 boarded elevator elevator_C
+2025-08-11 10:59:10,697 - root - INFO - Passenger P0008 boarded elevator elevator_C, destination: floor 10
+2025-08-11 10:59:10,698 - root - INFO - Passenger P0008 boarded elevator elevator_C
+2025-08-11 10:59:12,510 - root - INFO - Passenger P0005 arrived at floor 10
+2025-08-11 10:59:12,524 - root - INFO - Passenger P0006 arrived at floor 10
+2025-08-11 10:59:12,526 - root - INFO - Passenger P0005 exited elevator elevator_B
+2025-08-11 10:59:12,527 - root - INFO - Passenger P0006 exited elevator elevator_B
+2025-08-11 10:59:22,491 - root - INFO - Passenger P0007 arrived at floor 10
+2025-08-11 10:59:22,506 - root - INFO - Passenger P0008 arrived at floor 10
+2025-08-11 10:59:22,507 - root - INFO - Passenger P0009 arrived at floor 10
+2025-08-11 10:59:22,508 - root - INFO - Passenger P0010 arrived at floor 10
+2025-08-11 10:59:22,508 - root - INFO - Passenger P0007 exited elevator elevator_C
+2025-08-11 10:59:22,509 - root - INFO - Passenger P0008 exited elevator elevator_C
+2025-08-11 10:59:22,510 - root - INFO - Passenger P0009 exited elevator elevator_C
+2025-08-11 10:59:22,510 - root - INFO - Passenger P0010 exited elevator elevator_C
+2025-08-11 10:59:43,521 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 11:00:16,222 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 11:00:16,436 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 11:00:16,437 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 11:00:16,438 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 11:00:16,438 - root - INFO - Elevator elevator_C initialized: floors 1-10, capacity 8
+2025-08-11 11:00:16,438 - root - INFO - Building main_building initialized with 3 elevators and 10 floors
+2025-08-11 11:00:16,441 - root - INFO - Simulation logger initialized for session 20250811_110016
+2025-08-11 11:00:16,442 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 11:00:16,442 - root - INFO - Simulation controller initialized
+2025-08-11 11:00:16,443 - root - INFO - Elevator simulator initialized
+2025-08-11 11:00:16,796 - root - INFO - Building and GUI created from configuration
+2025-08-11 11:00:16,798 - root - INFO - Main window initialized
+2025-08-11 11:00:52,899 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:00:52,914 - root - INFO - Added passenger P0001: floor 1 -> 10
+2025-08-11 11:00:55,203 - root - INFO - Simulation started
+2025-08-11 11:00:57,287 - root - INFO - Passenger P0001 boarded elevator elevator_A, destination: floor 10
+2025-08-11 11:00:57,302 - root - INFO - Passenger P0001 boarded elevator elevator_A
+2025-08-11 11:00:59,990 - root - INFO - Hall call assigned to elevator elevator_B: floor 1, direction UP
+2025-08-11 11:00:59,996 - root - INFO - Added passenger P0002: floor 1 -> 2
+2025-08-11 11:01:00,258 - root - INFO - Passenger P0002 boarded elevator elevator_A, destination: floor 2
+2025-08-11 11:01:00,273 - root - INFO - Passenger P0002 boarded elevator elevator_A
+2025-08-11 11:01:02,746 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 11:01:02,750 - root - INFO - Added passenger P0003: floor 10 -> 1
+2025-08-11 11:01:03,539 - root - INFO - Hall call assigned to elevator elevator_C: floor 1, direction UP
+2025-08-11 11:01:03,546 - root - INFO - Added passenger P0004: floor 1 -> 10
+2025-08-11 11:01:03,590 - root - INFO - Passenger P0004 boarded elevator elevator_B, destination: floor 10
+2025-08-11 11:01:03,591 - root - INFO - Passenger P0004 boarded elevator elevator_B
+2025-08-11 11:01:05,315 - root - INFO - Passenger P0002 arrived at floor 2
+2025-08-11 11:01:05,328 - root - INFO - Passenger P0002 exited elevator elevator_A
+2025-08-11 11:01:14,564 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 11:03:21,020 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 11:03:21,232 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 11:03:21,233 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 11:03:21,234 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 11:03:21,236 - root - INFO - Building main_building initialized with 2 elevators and 10 floors
+2025-08-11 11:03:21,241 - root - INFO - Simulation logger initialized for session 20250811_110321
+2025-08-11 11:03:21,242 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 11:03:21,243 - root - INFO - Simulation controller initialized
+2025-08-11 11:03:21,244 - root - INFO - Elevator simulator initialized
+2025-08-11 11:03:21,458 - root - INFO - Building and GUI created from configuration
+2025-08-11 11:03:21,459 - root - INFO - Main window initialized
+2025-08-11 11:03:30,751 - root - INFO - Simulation started
+2025-08-11 11:03:33,424 - root - INFO - Passenger generation enabled
+2025-08-11 11:03:35,997 - root - INFO - Passenger generation disabled
+2025-08-11 11:03:37,019 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:03:37,032 - root - INFO - Added passenger P0001: floor 1 -> 2
+2025-08-11 11:03:37,644 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:03:37,646 - root - INFO - Added passenger P0002: floor 10 -> 1
+2025-08-11 11:03:38,353 - root - INFO - Hall call assigned to elevator elevator_B: floor 3, direction UP
+2025-08-11 11:03:38,356 - root - INFO - Added passenger P0003: floor 3 -> 10
+2025-08-11 11:03:39,105 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:03:39,118 - root - INFO - Added passenger P0004: floor 1 -> 10
+2025-08-11 11:03:39,203 - root - INFO - Passenger P0001 boarded elevator elevator_A, destination: floor 2
+2025-08-11 11:03:39,204 - root - INFO - Passenger P0001 boarded elevator elevator_A
+2025-08-11 11:03:39,205 - root - INFO - Passenger P0004 boarded elevator elevator_A, destination: floor 10
+2025-08-11 11:03:39,206 - root - INFO - Passenger P0004 boarded elevator elevator_A
+2025-08-11 11:03:41,054 - root - INFO - Passenger P0003 boarded elevator elevator_B, destination: floor 10
+2025-08-11 11:03:41,065 - root - INFO - Passenger P0003 boarded elevator elevator_B
+2025-08-11 11:03:44,120 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:03:44,131 - root - INFO - Added passenger P0005: floor 10 -> 1
+2025-08-11 11:03:45,718 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:03:45,730 - root - INFO - Added passenger P0006: floor 1 -> 10
+2025-08-11 11:03:47,041 - root - INFO - Passenger P0001 arrived at floor 2
+2025-08-11 11:03:47,048 - root - INFO - Passenger P0001 exited elevator elevator_A
+2025-08-11 11:03:52,380 - root - INFO - Passenger P0003 arrived at floor 10
+2025-08-11 11:03:52,397 - root - INFO - Passenger P0003 exited elevator elevator_B
+2025-08-11 11:03:52,399 - root - INFO - Passenger P0002 boarded elevator elevator_B, destination: floor 1
+2025-08-11 11:03:52,400 - root - INFO - Passenger P0002 boarded elevator elevator_B
+2025-08-11 11:03:52,401 - root - INFO - Passenger P0005 boarded elevator elevator_B, destination: floor 1
+2025-08-11 11:03:52,402 - root - INFO - Passenger P0005 boarded elevator elevator_B
+2025-08-11 11:03:54,925 - root - INFO - Passenger P0006 boarded elevator elevator_A, destination: floor 10
+2025-08-11 11:03:54,939 - root - INFO - Passenger P0006 boarded elevator elevator_A
+2025-08-11 11:03:56,410 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 11:07:19,021 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 11:07:19,339 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 11:07:19,340 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 11:07:19,341 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 11:07:19,341 - root - INFO - Building main_building initialized with 2 elevators and 10 floors
+2025-08-11 11:07:19,346 - root - INFO - Simulation logger initialized for session 20250811_110719
+2025-08-11 11:07:19,347 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 11:07:19,349 - root - INFO - Simulation controller initialized
+2025-08-11 11:07:19,350 - root - INFO - Elevator simulator initialized
+2025-08-11 11:07:20,341 - root - INFO - Building and GUI created from configuration
+2025-08-11 11:07:20,350 - root - INFO - Main window initialized
+2025-08-11 11:07:29,290 - root - INFO - Simulation started
+2025-08-11 11:07:32,552 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:07:32,566 - root - INFO - Added passenger P0001: floor 1 -> 10
+2025-08-11 11:07:33,065 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:07:33,079 - root - INFO - Added passenger P0002: floor 10 -> 1
+2025-08-11 11:07:34,867 - root - INFO - Passenger P0001 boarded elevator elevator_A, destination: floor 10
+2025-08-11 11:07:34,882 - root - INFO - Passenger P0001 boarded elevator elevator_A
+2025-08-11 11:07:38,905 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:07:38,917 - root - INFO - Added passenger P0003: floor 1 -> 10
+2025-08-11 11:07:39,266 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:07:39,280 - root - INFO - Added passenger P0004: floor 10 -> 1
+2025-08-11 11:07:39,683 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:07:39,684 - root - INFO - Added passenger P0005: floor 10 -> 1
+2025-08-11 11:07:40,198 - root - INFO - Passenger P0002 boarded elevator elevator_B, destination: floor 1
+2025-08-11 11:07:40,213 - root - INFO - Passenger P0002 boarded elevator elevator_B
+2025-08-11 11:07:40,214 - root - INFO - Passenger P0005 boarded elevator elevator_B, destination: floor 1
+2025-08-11 11:07:40,215 - root - INFO - Passenger P0005 boarded elevator elevator_B
+2025-08-11 11:07:40,216 - root - INFO - Passenger P0004 boarded elevator elevator_B, destination: floor 1
+2025-08-11 11:07:40,217 - root - INFO - Passenger P0004 boarded elevator elevator_B
+2025-08-11 11:07:40,351 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:07:40,352 - root - INFO - Added passenger P0006: floor 10 -> 1
+2025-08-11 11:07:40,450 - root - INFO - Passenger P0006 boarded elevator elevator_B, destination: floor 1
+2025-08-11 11:07:40,451 - root - INFO - Passenger P0006 boarded elevator elevator_B
+2025-08-11 11:07:41,983 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:07:41,996 - root - INFO - Added passenger P0007: floor 10 -> 1
+2025-08-11 11:07:42,136 - root - INFO - Passenger P0007 boarded elevator elevator_B, destination: floor 1
+2025-08-11 11:07:42,149 - root - INFO - Passenger P0007 boarded elevator elevator_B
+2025-08-11 11:07:42,329 - root - INFO - Passenger P0003 boarded elevator elevator_A, destination: floor 10
+2025-08-11 11:07:42,330 - root - INFO - Passenger P0003 boarded elevator elevator_A
+2025-08-11 11:07:49,779 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:07:49,796 - root - INFO - Added passenger P0008: floor 1 -> 10
+2025-08-11 11:07:50,427 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:07:50,439 - root - INFO - Added passenger P0009: floor 1 -> 10
+2025-08-11 11:07:51,025 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:07:51,031 - root - INFO - Added passenger P0010: floor 1 -> 10
+2025-08-11 11:07:51,554 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:07:51,556 - root - INFO - Added passenger P0011: floor 1 -> 10
+2025-08-11 11:07:52,272 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:07:52,287 - root - INFO - Added passenger P0012: floor 1 -> 10
+2025-08-11 11:07:54,157 - root - INFO - Passenger P0001 arrived at floor 10
+2025-08-11 11:07:54,173 - root - INFO - Passenger P0003 arrived at floor 10
+2025-08-11 11:07:54,174 - root - INFO - Passenger P0001 exited elevator elevator_A
+2025-08-11 11:07:54,175 - root - INFO - Passenger P0003 exited elevator elevator_A
+2025-08-11 11:08:00,006 - root - INFO - Passenger P0002 arrived at floor 1
+2025-08-11 11:08:00,012 - root - INFO - Passenger P0004 arrived at floor 1
+2025-08-11 11:08:00,014 - root - INFO - Passenger P0005 arrived at floor 1
+2025-08-11 11:08:00,018 - root - INFO - Passenger P0006 arrived at floor 1
+2025-08-11 11:08:00,020 - root - INFO - Passenger P0007 arrived at floor 1
+2025-08-11 11:08:00,022 - root - INFO - Passenger P0002 exited elevator elevator_B
+2025-08-11 11:08:00,024 - root - INFO - Passenger P0004 exited elevator elevator_B
+2025-08-11 11:08:00,027 - root - INFO - Passenger P0005 exited elevator elevator_B
+2025-08-11 11:08:00,028 - root - INFO - Passenger P0006 exited elevator elevator_B
+2025-08-11 11:08:00,030 - root - INFO - Passenger P0007 exited elevator elevator_B
+2025-08-11 11:08:00,032 - root - INFO - Passenger P0009 boarded elevator elevator_B, destination: floor 10
+2025-08-11 11:08:00,034 - root - INFO - Passenger P0009 boarded elevator elevator_B
+2025-08-11 11:08:00,036 - root - INFO - Passenger P0012 boarded elevator elevator_B, destination: floor 10
+2025-08-11 11:08:00,037 - root - INFO - Passenger P0012 boarded elevator elevator_B
+2025-08-11 11:08:00,039 - root - INFO - Passenger P0010 boarded elevator elevator_B, destination: floor 10
+2025-08-11 11:08:00,040 - root - INFO - Passenger P0010 boarded elevator elevator_B
+2025-08-11 11:08:00,042 - root - INFO - Passenger P0008 boarded elevator elevator_B, destination: floor 10
+2025-08-11 11:08:00,044 - root - INFO - Passenger P0008 boarded elevator elevator_B
+2025-08-11 11:08:00,045 - root - INFO - Passenger P0011 boarded elevator elevator_B, destination: floor 10
+2025-08-11 11:08:00,047 - root - INFO - Passenger P0011 boarded elevator elevator_B
+2025-08-11 11:08:12,931 - root - INFO - Passenger P0008 arrived at floor 10
+2025-08-11 11:08:12,941 - root - INFO - Passenger P0009 arrived at floor 10
+2025-08-11 11:08:12,942 - root - INFO - Passenger P0010 arrived at floor 10
+2025-08-11 11:08:12,943 - root - INFO - Passenger P0011 arrived at floor 10
+2025-08-11 11:08:12,945 - root - INFO - Passenger P0012 arrived at floor 10
+2025-08-11 11:08:12,946 - root - INFO - Passenger P0008 exited elevator elevator_B
+2025-08-11 11:08:12,948 - root - INFO - Passenger P0009 exited elevator elevator_B
+2025-08-11 11:08:12,949 - root - INFO - Passenger P0010 exited elevator elevator_B
+2025-08-11 11:08:12,950 - root - INFO - Passenger P0011 exited elevator elevator_B
+2025-08-11 11:08:12,951 - root - INFO - Passenger P0012 exited elevator elevator_B
+2025-08-11 11:09:10,227 - root - INFO - Elevator Simulation Tool shutting down

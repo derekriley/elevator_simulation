@@ -1,0 +1,6 @@
+section,name,description,duration,speed_multiplier,passenger_arrival_rate,start_time,passenger_count,floor_distribution,id,arrival_time,origin_floor,destination_floor
+simulation,,,600,1.0,0.3,,,,,,
+scenario,Morning Rush,Typical morning rush hour,,,0,20,ground_heavy,,,,,
+scenario,Lunch Time,Lunch hour traffic,,,300,15,uniform,,,,,
+passenger,,,,,,,,,test_passenger_1,10,1,8
+passenger,,,,,,,,,test_passenger_2,15,5,2

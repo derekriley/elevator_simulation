@@ -1,0 +1,4 @@
+section,id,num_floors,name,capacity,speed,initial_floor
+building,main_building,10,Main Office Building,,,
+elevator,elevator_A,,,8,2.5,1
+elevator,elevator_B,,,12,2.0,1
