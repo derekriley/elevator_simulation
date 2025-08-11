@@ -40,7 +40,6 @@ class ElevatorPanel(ttk.Frame):
         self._floor_labels = {}
         self._button_widgets = {}
         self._elevator_indicator = None
-        self._waiting_passenger_labels = {}  # Store waiting passenger count labels
         
         self._setup_panel()
         
@@ -49,7 +48,7 @@ class ElevatorPanel(ttk.Frame):
         # Title
         title_label = ttk.Label(self, text=f"Elevator {self._elevator.id}", 
                                font=("Arial", 12, "bold"))
-        title_label.grid(row=0, column=0, columnspan=3, pady=5)
+        title_label.grid(row=0, column=0, columnspan=2, pady=5)
         
         # Create elevator shaft visualization
         self._setup_elevator_shaft()
@@ -65,13 +64,12 @@ class ElevatorPanel(ttk.Frame):
         shaft_frame = ttk.LabelFrame(self, text="Elevator Shaft", padding="5")
         shaft_frame.grid(row=1, column=0, padx=5, pady=5, sticky="nsew")
         
-        # Title for waiting passengers
+        # Title for elevator shaft
         title_frame = ttk.Frame(shaft_frame)
         title_frame.grid(row=0, column=0, sticky="ew", pady=2)
         
         ttk.Label(title_frame, text="Floor", font=("Arial", 8, "bold")).grid(row=0, column=0, padx=2)
         ttk.Label(title_frame, text="Elevator", font=("Arial", 8, "bold")).grid(row=0, column=1, padx=2)
-        ttk.Label(title_frame, text="Waiting", font=("Arial", 8, "bold")).grid(row=0, column=2, padx=2)
         
         # Create floor indicators (top to bottom)
         for floor in range(self._num_floors, 0, -1):
@@ -90,29 +88,9 @@ class ElevatorPanel(ttk.Frame):
             
             self._floor_labels[floor] = indicator
             
-            # Waiting passenger count indicator (at the "doors")
-            waiting_frame = ttk.Frame(floor_frame)
-            waiting_frame.grid(row=0, column=2, padx=2)
-            
-            waiting_label = ttk.Label(waiting_frame, text="", width=4, 
-                                    font=("Arial", 8), foreground="darkblue")
-            waiting_label.grid(row=0, column=0)
-            
-            self._waiting_passenger_labels[floor] = waiting_label
+
         
-        # Passenger count display
-        passenger_frame = ttk.Frame(shaft_frame)
-        passenger_frame.grid(row=self._num_floors + 1, column=0, sticky="ew", pady=5)
         
-        ttk.Label(passenger_frame, text="Passengers:").grid(row=0, column=0, padx=2)
-        self._passenger_count_label = ttk.Label(passenger_frame, text="0", 
-                                              font=("Arial", 10, "bold"))
-        self._passenger_count_label.grid(row=0, column=1, padx=2)
-        
-        # Add a visual passenger indicator
-        self._passenger_indicator = tk.Label(passenger_frame, text="", width=6, height=1,
-                                           bg="white", relief="solid", borderwidth=1)
-        self._passenger_indicator.grid(row=1, column=0, columnspan=2, pady=2)
         
         # Set initial elevator position
         self._update_elevator_position()
@@ -151,19 +129,10 @@ class ElevatorPanel(ttk.Frame):
         self._direction_label = ttk.Label(status_frame, text="Direction: None")
         self._direction_label.grid(row=1, column=0, sticky="w", pady=2)
         
-        self._passengers_label = ttk.Label(status_frame, text="Passengers: 0/8")
-        self._passengers_label.grid(row=2, column=0, sticky="w", pady=2)
-        
         self._requests_label = ttk.Label(status_frame, text="Requests: None")
-        self._requests_label.grid(row=3, column=0, sticky="w", pady=2)
+        self._requests_label.grid(row=2, column=0, sticky="w", pady=2)
         
-        # Passenger list
-        self._passenger_list_label = ttk.Label(status_frame, text="Passengers:")
-        self._passenger_list_label.grid(row=4, column=0, sticky="w", pady=2)
-        
-        self._passenger_list = tk.Text(status_frame, height=4, width=30, 
-                                     font=("Courier", 8), state="disabled")
-        self._passenger_list.grid(row=5, column=0, sticky="ew", pady=2)
+
         
         # Door status indicator
         self._door_indicator = tk.Label(status_frame, text="DOORS CLOSED",
@@ -207,14 +176,7 @@ class ElevatorPanel(ttk.Frame):
                 bg_color = "magenta"
                 text = state.value.upper()
             
-            # Add passenger count to the text if there are passengers
-            passenger_count = self._elevator.passenger_count
-            if passenger_count > 0:
-                text += f"\n{passenger_count} P"
-                # Add a border to highlight when carrying passengers
-                indicator.config(relief="solid", borderwidth=2)
-            else:
-                indicator.config(relief="solid", borderwidth=1)
+
             
             indicator.config(bg=bg_color, text=text, fg="white")
     
@@ -228,9 +190,7 @@ class ElevatorPanel(ttk.Frame):
         direction_text = self._elevator.direction.name.title()
         self._direction_label.config(text=f"Direction: {direction_text}")
         
-        # Passengers
-        passenger_text = f"Passengers: {self._elevator.passenger_count}/{self._elevator.capacity}"
-        self._passengers_label.config(text=passenger_text)
+
         
         # Requests
         requests = sorted(list(self._elevator.floor_requests))
@@ -240,21 +200,9 @@ class ElevatorPanel(ttk.Frame):
             requests_text = "Requests: None"
         self._requests_label.config(text=requests_text)
         
-        # Update passenger list
-        self._update_passenger_list()
+
         
-        # Update passenger count in shaft
-        passenger_count = self._elevator.passenger_count
-        self._passenger_count_label.config(text=str(passenger_count))
-        
-        # Update visual passenger indicator
-        if passenger_count > 0:
-            self._passenger_indicator.config(text=f"{passenger_count}", bg="lightgreen", fg="black")
-        else:
-            self._passenger_indicator.config(text="Empty", bg="lightgray", fg="black")
-        
-        # Update waiting passenger counts on each floor
-        self._update_waiting_passenger_counts()
+
         
         # Door status
         if self._elevator.is_door_open:
@@ -273,46 +221,9 @@ class ElevatorPanel(ttk.Frame):
             if floor in self._button_widgets:
                 self._button_widgets[floor].config(bg="lightblue")
     
-    def _update_passenger_list(self) -> None:
-        """Update the passenger list display."""
-        self._passenger_list.config(state="normal")
-        self._passenger_list.delete(1.0, tk.END)
-        
-        if not self._passengers_info:
-            self._passenger_list.insert(tk.END, "No passengers")
-        else:
-            for passenger_id, destination in self._passengers_info.items():
-                self._passenger_list.insert(tk.END, f"{passenger_id} → {destination}\n")
-        
-        self._passenger_list.config(state="disabled")
+
     
-    def _update_waiting_passenger_counts(self) -> None:
-        """Update the waiting passenger count displays for each floor."""
-        if not self._building:
-            return
-            
-        for floor_num in range(1, self._num_floors + 1):
-            waiting_label = self._waiting_passenger_labels.get(floor_num)
-            if waiting_label:
-                floor = self._building.get_floor(floor_num)
-                if floor:
-                    # Get waiting passenger counts for both directions
-                    waiting_up = len(floor.waiting_passengers_up)
-                    waiting_down = len(floor.waiting_passengers_down)
-                    total_waiting = waiting_up + waiting_down
-                    
-                    if total_waiting > 0:
-                        # Show total count with color coding
-                        waiting_label.config(
-                            text=f"{total_waiting}",
-                            foreground="red" if total_waiting > 5 else "darkblue",
-                            font=("Arial", 8, "bold")
-                        )
-                    else:
-                        # No waiting passengers
-                        waiting_label.config(text="", foreground="darkblue")
-                else:
-                    waiting_label.config(text="", foreground="darkblue")
+
     
     def update_display(self, elevator: Elevator, passengers_info: dict = None) -> None:
         """

@@ -85,7 +85,6 @@ class ElevatorVisualization:
             
             # Elevator ID and info
             self.canvas.create_text(x, y - 5, text=f"E{state['id']}", font=('Arial', 8, 'bold'))
-            self.canvas.create_text(x, y + 5, text=f"{state['passenger_count']}/{state['capacity']}", font=('Arial', 7))
             
             # Direction arrow
             if state['direction'] == 1:  # UP
@@ -106,10 +105,7 @@ class StatisticsPanel:
         self.stats_vars = {
             'current_time': tk.StringVar(value="0.0"),
             'simulation_progress': tk.StringVar(value="0%"),
-            'passengers_generated': tk.StringVar(value="0"),
-            'passengers_completed': tk.StringVar(value="0"),
             'pending_requests': tk.StringVar(value="0"),
-            'avg_wait_time': tk.StringVar(value="0.0"),
             'total_energy': tk.StringVar(value="0.0"),
             'active_elevators': tk.StringVar(value="0")
         }
@@ -305,10 +301,10 @@ class ElevatorSimulationGUI:
         self.fig = Figure(figsize=(8, 6), dpi=100)
         
         # Create subplots
-        self.ax1 = self.fig.add_subplot(221)  # Passenger count over time
-        self.ax2 = self.fig.add_subplot(222)  # Wait times
-        self.ax3 = self.fig.add_subplot(223)  # Energy consumption
-        self.ax4 = self.fig.add_subplot(224)  # Elevator utilization
+        self.ax1 = self.fig.add_subplot(221)  # Active elevators over time
+        self.ax2 = self.fig.add_subplot(222)  # Energy consumption
+        self.ax3 = self.fig.add_subplot(223)  # Elevator utilization
+        self.ax4 = self.fig.add_subplot(224)  # System status
         
         self.fig.tight_layout()
         
@@ -320,8 +316,7 @@ class ElevatorSimulationGUI:
         # Initialize data storage for charts
         self.chart_data = {
             'times': [],
-            'passenger_counts': [],
-            'wait_times': [],
+            'active_elevators': [],
             'energy_consumption': [],
             'elevator_utilization': []
         }
@@ -373,13 +368,15 @@ class ElevatorSimulationGUI:
         
         # Add data points
         self.chart_data['times'].append(stats['current_time'])
-        self.chart_data['passenger_counts'].append(stats.get('passengers_generated', 0))
-        self.chart_data['wait_times'].append(stats.get('avg_wait_time', 0))
+        
+        # Calculate active elevators
+        elevator_states = self.simulation.get_elevator_states()
+        active_elevators = sum(1 for e in elevator_states if e['passenger_count'] > 0)
+        self.chart_data['active_elevators'].append(active_elevators)
+        
         self.chart_data['energy_consumption'].append(stats.get('total_energy', 0))
         
         # Calculate elevator utilization
-        elevator_states = self.simulation.get_elevator_states()
-        active_elevators = sum(1 for e in elevator_states if e['passenger_count'] > 0)
         total_elevators = len(elevator_states)
         utilization = active_elevators / max(1, total_elevators) * 100
         self.chart_data['elevator_utilization'].append(utilization)
@@ -392,25 +389,27 @@ class ElevatorSimulationGUI:
         
         # Update plots
         self.ax1.clear()
-        self.ax1.plot(self.chart_data['times'], self.chart_data['passenger_counts'])
-        self.ax1.set_title('Passengers Generated')
+        self.ax1.plot(self.chart_data['times'], self.chart_data['active_elevators'])
+        self.ax1.set_title('Active Elevators')
         self.ax1.set_ylabel('Count')
+        self.ax1.set_xlabel('Time (s)')
         
         self.ax2.clear()
-        self.ax2.plot(self.chart_data['times'], self.chart_data['wait_times'])
-        self.ax2.set_title('Average Wait Time')
-        self.ax2.set_ylabel('Seconds')
+        self.ax2.plot(self.chart_data['times'], self.chart_data['energy_consumption'])
+        self.ax2.set_title('Energy Consumption')
+        self.ax2.set_ylabel('Units')
+        self.ax2.set_xlabel('Time (s)')
         
         self.ax3.clear()
-        self.ax3.plot(self.chart_data['times'], self.chart_data['energy_consumption'])
-        self.ax3.set_title('Energy Consumption')
-        self.ax3.set_ylabel('Units')
+        self.ax3.plot(self.chart_data['times'], self.chart_data['elevator_utilization'])
+        self.ax3.set_title('Elevator Utilization')
+        self.ax3.set_ylabel('Percentage')
         self.ax3.set_xlabel('Time (s)')
         
         self.ax4.clear()
-        self.ax4.plot(self.chart_data['times'], self.chart_data['elevator_utilization'])
-        self.ax4.set_title('Elevator Utilization')
-        self.ax4.set_ylabel('Percentage')
+        self.ax4.plot(self.chart_data['times'], self.chart_data['active_elevators'])
+        self.ax4.set_title('System Status')
+        self.ax4.set_ylabel('Active Elevators')
         self.ax4.set_xlabel('Time (s)')
         
         self.fig.tight_layout()

@@ -66,10 +66,7 @@ class ControlPanel(ttk.Frame):
         notebook.add(sim_frame, text="Simulation")
         self._setup_simulation_tab(sim_frame)
         
-        # Passenger List tab
-        passenger_list_frame = ttk.Frame(notebook)
-        notebook.add(passenger_list_frame, text="Passenger List")
-        self._setup_passenger_list_tab(passenger_list_frame)
+
         
         # Metrics tab
         metrics_frame = ttk.Frame(notebook)
@@ -213,38 +210,7 @@ class ControlPanel(ttk.Frame):
         # Initialize metrics display
         self._create_metrics_labels()
     
-    def _setup_passenger_list_tab(self, parent) -> None:
-        """Set up the passenger list display interface."""
-        # Instructions
-        instructions = ttk.Label(parent, text="Current passenger status:", 
-                               font=("Arial", 10, "bold"))
-        instructions.pack(pady=10)
-        
-        # Create passenger list display
-        list_frame = ttk.Frame(parent)
-        list_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
-        
-        # Create treeview for passenger information
-        columns = ("Origin", "Destination", "State", "Elevator", "Wait Time")
-        self._passenger_tree = ttk.Treeview(list_frame, columns=columns, show="headings", height=15)
-        
-        # Set column headings
-        for col in columns:
-            self._passenger_tree.heading(col, text=col)
-            self._passenger_tree.column(col, width=100, anchor="center")
-        
-        # Add scrollbar
-        scrollbar = ttk.Scrollbar(list_frame, orient="vertical", command=self._passenger_tree.yview)
-        self._passenger_tree.configure(yscrollcommand=scrollbar.set)
-        
-        # Pack the treeview and scrollbar
-        self._passenger_tree.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-        
-        # Status label
-        self._passenger_status_label = ttk.Label(parent, text="No passengers", 
-                                               font=("Arial", 9))
-        self._passenger_status_label.pack(pady=5)
+
     
     def _create_metrics_labels(self) -> None:
         """Create labels for displaying metrics."""
@@ -259,13 +225,8 @@ class ControlPanel(ttk.Frame):
                 ("active_elevators", "Active Elevators"),
                 ("idle_elevators", "Idle Elevators")
             ]),
-            ("Passenger Metrics", [
-                ("passenger_count", "Total Passengers"),
-                ("active_passengers", "Active Passengers"),
-                ("pending_requests", "Pending Requests")
-            ]),
+
             ("Performance", [
-                ("avg_wait_time", "Average Wait Time"),
                 ("energy_usage", "Energy Usage"),
                 ("efficiency_score", "Efficiency Score")
             ])
@@ -385,13 +346,9 @@ Tips:
         self._update_metric("active_elevators", controller_metrics.get("active_elevators", 0))
         self._update_metric("idle_elevators", controller_metrics.get("idle_elevators", 0))
         
-        # Update passenger metrics
-        self._update_metric("passenger_count", simulation_status.get("passenger_count", 0))
-        self._update_metric("active_passengers", simulation_status.get("active_passengers", 0))
-        self._update_metric("pending_requests", controller_metrics.get("pending_requests", 0))
+
         
         # Update performance metrics (simplified)
-        self._update_metric("avg_wait_time", "N/A")  # Would need passenger tracking
         self._update_metric("energy_usage", controller_metrics.get("estimated_energy", 0))
         
         # Calculate simple efficiency score
@@ -400,51 +357,9 @@ Tips:
         efficiency = (active_elevators / total_elevators) * 100 if total_elevators > 0 else 0
         self._update_metric("efficiency_score", f"{efficiency:.1f}%")
         
-        # Update passenger list
-        self._update_passenger_list(simulation_status)
+
     
-    def _update_passenger_list(self, simulation_status: Dict[str, Any]) -> None:
-        """Update the passenger list display."""
-        # Clear existing items
-        for item in self._passenger_tree.get_children():
-            self._passenger_tree.delete(item)
-        
-        # Get passenger information from building status
-        building_status = simulation_status.get("building_status", {})
-        elevators = building_status.get("elevators", {})
-        
-        # Collect passenger information
-        passengers_data = []
-        
-        # Get passengers from elevators
-        for elevator_id, elevator_status in elevators.items():
-            for passenger_id in elevator_status.get("passengers", []):
-                # This would need access to passenger details from the simulator
-                # For now, show basic info
-                passengers_data.append({
-                    "id": passenger_id,
-                    "origin": "N/A",
-                    "destination": "N/A", 
-                    "state": "In Elevator",
-                    "elevator": elevator_id,
-                    "wait_time": "N/A"
-                })
-        
-        # Update status label
-        if passengers_data:
-            self._passenger_status_label.config(text=f"{len(passengers_data)} passengers active")
-        else:
-            self._passenger_status_label.config(text="No passengers")
-        
-        # Populate treeview
-        for passenger in passengers_data:
-            self._passenger_tree.insert("", "end", values=(
-                passenger["origin"],
-                passenger["destination"], 
-                passenger["state"],
-                passenger["elevator"],
-                passenger["wait_time"]
-            ))
+
     
     def _update_metric(self, metric_key: str, value) -> None:
         """Update a specific metric display."""
