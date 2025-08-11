@@ -552,3 +552,34 @@
 2025-08-11 11:36:47,722 - root - INFO - Passenger P0006 boarded elevator elevator_A
 2025-08-11 11:36:53,356 - root - INFO - Elevator Simulation Tool shutting down
 >>>>>>> claude
+2025-08-11 11:45:00,211 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 11:45:00,359 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 11:45:00,359 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 11:45:00,359 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 11:45:00,359 - root - INFO - Building main_building initialized with 2 elevators and 10 floors
+2025-08-11 11:45:00,360 - root - INFO - Simulation logger initialized for session 20250811_114500
+2025-08-11 11:45:00,360 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 11:45:00,360 - root - INFO - Simulation controller initialized
+2025-08-11 11:45:00,361 - root - INFO - Elevator simulator initialized
+2025-08-11 11:45:00,518 - root - INFO - Building and GUI created from configuration
+2025-08-11 11:45:00,518 - root - INFO - Main window initialized
+2025-08-11 11:45:09,912 - root - INFO - Simulation started
+2025-08-11 11:45:11,762 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 11:45:11,762 - root - INFO - Added passenger P0001: floor 1 -> 10
+2025-08-11 11:45:12,100 - root - INFO - Hall call assigned to elevator elevator_B: floor 10, direction DOWN
+2025-08-11 11:45:12,100 - root - INFO - Added passenger P0002: floor 10 -> 1
+2025-08-11 11:45:13,263 - root - INFO - Hall call assigned to elevator elevator_B: floor 1, direction UP
+2025-08-11 11:45:13,263 - root - INFO - Added passenger P0003: floor 1 -> 2
+2025-08-11 11:45:13,875 - root - INFO - Hall call assigned to elevator elevator_B: floor 1, direction UP
+2025-08-11 11:45:13,875 - root - INFO - Added passenger P0004: floor 1 -> 2
+2025-08-11 11:45:13,895 - root - INFO - Passenger P0001 boarded elevator elevator_A, destination: floor 10
+2025-08-11 11:45:13,895 - root - INFO - Passenger P0001 boarded elevator elevator_A
+2025-08-11 11:45:13,896 - root - INFO - Passenger P0004 boarded elevator elevator_A, destination: floor 2
+2025-08-11 11:45:13,896 - root - INFO - Passenger P0004 boarded elevator elevator_A
+2025-08-11 11:45:13,896 - root - INFO - Passenger P0003 boarded elevator elevator_A, destination: floor 2
+2025-08-11 11:45:13,896 - root - INFO - Passenger P0003 boarded elevator elevator_A
+2025-08-11 11:45:14,059 - root - INFO - Hall call assigned to elevator elevator_B: floor 1, direction UP
+2025-08-11 11:45:14,059 - root - INFO - Added passenger P0005: floor 1 -> 2
+2025-08-11 11:45:14,072 - root - INFO - Passenger P0005 boarded elevator elevator_A, destination: floor 2
+2025-08-11 11:45:14,072 - root - INFO - Passenger P0005 boarded elevator elevator_A
+2025-08-11 11:45:16,320 - root - INFO - Elevator Simulation Tool shutting down
