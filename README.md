@@ -29,4 +29,6 @@ The application is built using SOLID principles with clear separation of concern
 ## Quick Start
 
 1. **Run the application**:
-   ```python main.py
+   ```bash
+
+   python main.py
