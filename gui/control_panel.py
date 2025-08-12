@@ -66,8 +66,6 @@ class ControlPanel(ttk.Frame):
         notebook.add(sim_frame, text="Simulation")
         self._setup_simulation_tab(sim_frame)
         
-
-        
         # Metrics tab
         metrics_frame = ttk.Frame(notebook)
         notebook.add(metrics_frame, text="Metrics")

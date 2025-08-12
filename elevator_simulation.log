@@ -642,3 +642,61 @@
 2025-08-11 12:17:56,710 - root - INFO - Simulation report saved to simulation_output\simulation_report_20250811_121740.json
 2025-08-11 12:17:56,711 - root - INFO - Simulation report generated
 2025-08-11 12:17:58,112 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 12:25:30,653 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 12:25:30,784 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 12:25:30,784 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 12:25:30,785 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 12:25:30,785 - root - INFO - Building main_building initialized with 2 elevators and 10 floors
+2025-08-11 12:25:30,785 - root - INFO - Simulation logger initialized for session 20250811_122530
+2025-08-11 12:25:30,785 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 12:25:30,785 - root - INFO - Simulation controller initialized
+2025-08-11 12:25:30,785 - root - INFO - Elevator simulator initialized
+2025-08-11 12:25:30,918 - root - INFO - Building and GUI created from configuration
+2025-08-11 12:25:30,918 - root - INFO - Main window initialized
+2025-08-11 12:25:35,173 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-11 15:32:53,249 - root - INFO - Starting Elevator Simulation Tool
+2025-08-11 15:32:53,355 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-11 15:32:53,355 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-11 15:32:53,355 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-11 15:32:53,355 - root - INFO - Building main_building initialized with 2 elevators and 10 floors
+2025-08-11 15:32:53,355 - root - INFO - Simulation logger initialized for session 20250811_153253
+2025-08-11 15:32:53,356 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-11 15:32:53,356 - root - INFO - Simulation controller initialized
+2025-08-11 15:32:53,356 - root - INFO - Elevator simulator initialized
+2025-08-11 15:32:53,421 - root - INFO - Building and GUI created from configuration
+2025-08-11 15:32:53,421 - root - INFO - Main window initialized
+2025-08-11 15:34:02,761 - root - INFO - Hall call assigned to elevator elevator_A: floor 1, direction UP
+2025-08-11 15:34:02,761 - root - INFO - Added passenger P0001: floor 1 -> 10
+2025-08-11 15:34:03,177 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 15:34:03,177 - root - INFO - Added passenger P0002: floor 10 -> 1
+2025-08-11 15:34:04,211 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 15:34:04,211 - root - INFO - Added passenger P0003: floor 10 -> 1
+2025-08-11 15:34:04,851 - root - INFO - Hall call assigned to elevator elevator_A: floor 10, direction DOWN
+2025-08-11 15:34:04,851 - root - INFO - Added passenger P0004: floor 10 -> 1
+2025-08-11 15:34:05,506 - root - INFO - Hall call assigned to elevator elevator_A: floor 6, direction UP
+2025-08-11 15:34:05,507 - root - INFO - Added passenger P0005: floor 6 -> 9
+2025-08-11 15:34:06,603 - root - INFO - Passenger generation enabled
+2025-08-11 15:34:07,999 - root - INFO - Simulation started
+2025-08-11 15:34:10,021 - root - INFO - Passenger P0001 boarded elevator elevator_A, destination: floor 10
+2025-08-11 15:34:10,021 - root - INFO - Passenger P0001 boarded elevator elevator_A
+2025-08-11 15:34:11,781 - root - INFO - Elevator elevator_B button pressed: floor 8
+2025-08-11 15:34:12,564 - root - INFO - Elevator elevator_B button pressed: floor 2
+2025-08-11 15:34:13,412 - root - INFO - Elevator elevator_A button pressed: floor 2
+2025-08-11 15:34:13,859 - root - INFO - Elevator elevator_A button pressed: floor 8
+2025-08-11 15:34:14,370 - root - INFO - Elevator elevator_A button pressed: floor 4
+2025-08-11 15:34:22,044 - root - INFO - Elevator elevator_B button pressed: floor 7
+2025-08-11 15:34:27,058 - root - INFO - Elevator elevator_B button pressed: floor 3
+2025-08-11 15:34:27,821 - root - INFO - Elevator elevator_B button pressed: floor 4
+2025-08-11 15:34:28,356 - root - INFO - Elevator elevator_B button pressed: floor 5
+2025-08-11 15:34:28,857 - root - INFO - Elevator elevator_B button pressed: floor 8
+2025-08-11 15:34:29,194 - root - INFO - Elevator elevator_B button pressed: floor 9
+2025-08-11 15:34:29,643 - root - INFO - Elevator elevator_B button pressed: floor 10
+2025-08-11 15:34:30,059 - root - INFO - Elevator elevator_B button pressed: floor 7
+2025-08-11 15:34:30,619 - root - INFO - Elevator elevator_B button pressed: floor 2
+2025-08-11 15:34:31,323 - root - INFO - Elevator elevator_A button pressed: floor 5
+2025-08-11 15:34:31,748 - root - INFO - Elevator elevator_A button pressed: floor 4
+2025-08-11 15:34:32,244 - root - INFO - Elevator elevator_A button pressed: floor 9
+2025-08-11 15:34:32,826 - root - INFO - Elevator elevator_A button pressed: floor 3
+2025-08-11 15:34:33,171 - root - INFO - Elevator elevator_A button pressed: floor 2
+2025-08-11 15:34:38,938 - root - INFO - Elevator elevator_A button pressed: floor 7
+2025-08-11 15:34:44,808 - root - INFO - Elevator Simulation Tool shutting down
