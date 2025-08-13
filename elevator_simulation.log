@@ -700,3 +700,15 @@
 2025-08-11 15:34:33,171 - root - INFO - Elevator elevator_A button pressed: floor 2
 2025-08-11 15:34:38,938 - root - INFO - Elevator elevator_A button pressed: floor 7
 2025-08-11 15:34:44,808 - root - INFO - Elevator Simulation Tool shutting down
+2025-08-13 13:04:07,936 - root - INFO - Starting Elevator Simulation Tool
+2025-08-13 13:04:08,339 - root - INFO - Configuration loaded from data\sample_building.csv
+2025-08-13 13:04:08,339 - root - INFO - Elevator elevator_A initialized: floors 1-10, capacity 8
+2025-08-13 13:04:08,339 - root - INFO - Elevator elevator_B initialized: floors 1-10, capacity 12
+2025-08-13 13:04:08,339 - root - INFO - Building main_building initialized with 2 elevators and 10 floors
+2025-08-13 13:04:08,340 - root - INFO - Simulation logger initialized for session 20250813_130408
+2025-08-13 13:04:08,340 - root - INFO - Elevator controller initialized with nearest_car algorithm
+2025-08-13 13:04:08,341 - root - INFO - Simulation controller initialized
+2025-08-13 13:04:08,341 - root - INFO - Elevator simulator initialized
+2025-08-13 13:04:08,481 - root - INFO - Building and GUI created from configuration
+2025-08-13 13:04:08,481 - root - INFO - Main window initialized
+2025-08-13 13:37:39,427 - root - INFO - Elevator Simulation Tool shutting down
